@@ -4,7 +4,7 @@ This is a Telegram bot that can track Ethereum (ETH) and Binance Smart Chain (BS
 # How it works
 The user sends the wallet address, the name of the wallet, and the source (etherscan.io or bscscan.io) to the bot.
 The bot will save the wallet details in a SQLite database.
-The bot will check for new transactions of the wallets periodically (every 10 minutes by default) and will send the transaction details to the user’s private chat.
+The bot will check for new transactions of the wallets periodically (every 10 seconds by default) and will send the transaction details to the user’s private chat.
 The user can manage the wallets and delete them through commands or inline keyboard buttons.
 
 # Dependencies
@@ -18,11 +18,11 @@ This project uses the following libraries:
 * datetime
 
 # Installation
-To run this project, you need to have Python 3.6 or higher installed on your system. You also need to create a Telegram bot token using BotFather and set it as an environment variable named TELEGRAM_TOKEN.
+To run this project, you need to have Python 3.6 or higher installed on your system. You also need to create a Telegram bot token using BotFather and set it in config.ini.
 
 Then, you can clone this repository and install the dependencies using pip:
 
-git clone https://github.com/your_username/python-telegram-wallet-tracker-bot.git
+git clone https://github.com/Amirhossein77-98/python-telegram-wallet-tracker-bot.git
 cd python-telegram-wallet-tracker-bot
 pip install -r requirements.txt
 
